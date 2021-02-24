@@ -35,11 +35,23 @@ body {
 
 }
 
-.b-ing:focus {
+a:link, a:visited, a:active {
+    text-decoration:none;
     color: black;
 }
 
 .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    background: linear-gradient(180deg, #C7FF28 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #63FF69 0%, rgba(255, 255, 255, 0) 100%), #136D05;
+}
+
+
+.home-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +71,7 @@ margin-top: 20px;
 .search {
 
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .cuadro-opciones {
@@ -106,17 +118,20 @@ margin-top: 20px;
 .form {
 
     
-    background-color: #fff;
-    width: 291px;
-    height: 310px;
+ 
     margin: auto;
-    margin-bottom: 60px;
-    box-shadow: 3px 4px 4px rgba(146, 146, 146, 0.5);
-    border-radius: 33px;
     text-align: center;
     padding: 10px;
+    margin-bottom: 64px;
 
     
+}
+
+
+
+.titulo-form {
+    
+    font-size: 30px;
 }
 
 .about {
@@ -124,9 +139,9 @@ margin-top: 20px;
     
     background-color: #fff;
     width: 291px;
-    height: 310px;
+    height: 400px;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     box-shadow: 3px 4px 4px rgba(146, 146, 146, 0.5);
     border-radius: 33px;
     text-align: center;
@@ -135,3 +150,6 @@ margin-top: 20px;
     
 }
 
+.boton-galeria {
+    color: rgb(0, 102, 255);
+}
