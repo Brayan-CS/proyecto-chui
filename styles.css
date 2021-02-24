@@ -1,13 +1,14 @@
 body {
     padding: 0;
     margin: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    
-
+  
 
 }
 .entrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: 'Play', sans-serif;
     background: linear-gradient(180deg, #F50BEC 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #D1A32C 0%, rgba(255, 255, 255, 0) 100%), #E5EA00;
@@ -22,7 +23,9 @@ body {
 
 .b-ing {
     
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #56B8FF;
     padding: 5px;
     margin-top: 180px;
@@ -37,8 +40,10 @@ body {
 }
 
 .home {
-    width: 360px;
-    height: 565px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: 'Play', sans-serif;
     background: linear-gradient(180deg, #C7FF28 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #63FF69 0%, rgba(255, 255, 255, 0) 100%), #136D05;
@@ -94,7 +99,7 @@ margin-top: 20px;
     text-align: center;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 80px;
+    grid-gap: 40px;
    
 }
 
