@@ -11,13 +11,15 @@ body {
     align-items: center;
     text-align: center;
     font-family: 'Play', sans-serif;
-    background: linear-gradient(180deg, #F50BEC 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #D1A32C 0%, rgba(255, 255, 255, 0) 100%), #E5EA00;
+    background: linear-gradient(130deg, #F50BEC 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #D1A32C 0%, rgba(255, 255, 255, 0) 100%), #E5EA00;
     
 }
 
 .logo {
 
-    max-width: 292px;
+    margin-top: 60px;
+    max-width: 320px;
+   
 
 }
 
@@ -26,18 +28,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #56B8FF;
-    padding: 5px;
-    margin-top: 180px;
-    margin-bottom: 119px;
-    border:solid black;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 140px;
+    margin-bottom: 63px;
+    border-radius: 25px;
 
 
 }
 
 a:link, a:visited, a:active {
     text-decoration:none;
-    color: black;
+    color: rgb(119, 117, 117);
 }
 
 .home {
@@ -74,9 +76,16 @@ margin-top: 20px;
     margin-bottom: 40px;
 }
 
+.search-form{
+
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+
+}
+
 .cuadro-opciones {
 
-    
     background-color: #fff;
     width: 291px;
     height: 310px;
@@ -94,12 +103,13 @@ margin-top: 20px;
     
     display: inline-block;
     inline-size: 200px;
-    block-size: 20px;
+    block-size: 22px;
     margin-bottom: 55px;
     font-size: 18px;
-    background-color:  #56B8FF;
+    background-color:  #ffffff;
     text-align: center;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -122,7 +132,7 @@ margin-top: 20px;
     margin: auto;
     text-align: center;
     padding: 10px;
-    margin-bottom: 64px;
+    margin-bottom: 14px;
 
     
 }
@@ -131,6 +141,7 @@ margin-top: 20px;
 
 .titulo-form {
     
+    margin-top: 0px ;
     font-size: 30px;
 }
 
@@ -151,5 +162,13 @@ margin-top: 20px;
 }
 
 .boton-galeria {
+    margin-top: -10px;
     color: rgb(0, 102, 255);
+}
+
+.txt-area {
+
+   height: 120px;
+   width: 300px;
+
 }
