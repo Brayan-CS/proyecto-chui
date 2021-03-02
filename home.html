@@ -6,28 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">      
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/c0075b8700.js" crossorigin="anonymous"></script>    
     <title>CHUI</title>
 </head>
 <body>
     
-    <div class="home" > 
+    <div class="home" >    
 
+            <header class='header'>
+                <nav class="nav">
+                    <a href="index.html"><img class="logo-home" src="images/logo.png" alt="chui"></a>
+                    <input type="text" class='search' placeholder="¿Qué estas buscando?">
+                    <ul class="nav__ul" id='om' >
+                        <li class="nav__li"><a href="home.html">Inicio</a></li>
+                        <li class="nav__li"><a href="about2.html">Sobre nosotros</a></li>
+                        <li class="nav__li"><a href="form.html">Viajemos</a></li>
+                        <li class="nav__li"><a href="https://api.whatsapp.com/send?phone=+573058199734&text=Hola!%20quiero%20viajar%20" target="__blank">WhatsApp</a></li>
+                        <li class="nav__li"><a href="">Más</a></li>
         
-        <a href="index.html"><img class="logo-home" src="images/logo.png" alt="chui"></a>
+                    </ul>
+                    <span class='boton-menu' onclick="showmenu()">
+                        <i class= 'fas fa-bars'></i>
+                    </span>
+                    
+        
+                </nav>
 
-        <nav>
+                   
+            </header>
 
-            <input type="text" class='search' placeholder="¿Qué estas buscando?">
 
-        </nav>
+           <div class="container">
+
+           </div>
 
         <div class='cuadro-opciones'>
 
-            <a href="tc.html"><h2 class='op-item'>Turismo en la ciudad</h2></a>
-            <a href="tr.html"><h2 class='op-item'>Turismo rural</h2></a>
-            <a href="ts.html"><h2 class='op-item'>Turismo sostenible</h2></a>
-            <a href="equipo.html"><h2 class='op-item'>Equipo CHUI</h2></a>
+          <a href="tc.html"><h2 class='op-item'>Turismo en la ciudad</h2></a>
+          <a href="tr.html"><h2 class='op-item-r'>Turismo rural</h2></a>
+          <a href="ts.html"><h2 class='op-item-s'>Turismo sostenible</h2></a>
+          <a href="equipo.html"><h2 class='op-item-e'>Equipo CHUI</h2></a>
 
 
 
@@ -37,15 +56,19 @@
 
     </div>
 
-  
+    <script src="main.js"></script>
 </body>
 
 
 <footer class="nav-foo">
-
+    <h2>CHUI: Turismo Sostenible</h2>
     
-    <a href="form.html"><img  class="img-foo" src="images/mensaje.png" alt="mensaje"></a>
-    <a href="home.html"><img  class="img-foo" src="images/home.png" alt="mensaje"></a>
-    <a href="about.html"><img  class="img-foo" src="images/chui.png" alt="mensaje"></a>
+    <div class='container-foo'>
+        <a href="form.html"><img  class="img-foo" src="images/fb.png" alt="mensaje"></a>
+        <a href="home.html"><img  class="img-foo" src="images/wp.png" alt="mensaje"></a>
+        <a href="about.html"><img  class="img-foo" src="images/insta.png" alt="mensaje"></a>
+
+    </div>
+    
 </footer>
 </html>

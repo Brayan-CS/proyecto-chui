@@ -11,50 +11,99 @@
 </head>
 <body>
     
-    <div class="home-form" > 
+ 
 
-        
-        <a href="index.html"><img class="logo-home" src="images/logo.png" alt="chui"></a>
+        <header class='header'>
+            <nav class="nav">
+                <a href="index.html"><img class="logo-home" src="images/logo.png" alt="chui"></a>
+                <input type="text" class='search' placeholder="¿Qué estas buscando?">
+                <ul class="nav__ul" id='om' >
+                    <li class="nav__li"><a href="home.html">Inicio</a></li>
+                    <li class="nav__li"><a href="about.html">Sobre nosotros</a></li>
+                    <li class="nav__li"><a href="form.html">Viajemos</a></li>
+                    <li class="nav__li"><a href="">WhatsApp</a></li>
+                    <li class="nav__li"><a href="">Más</a></li>
+    
+                </ul>
+                <span class='boton-menu' onclick="showmenu()">
+                    <i class= 'fas fa-bars'></i>
+                </span>
+                
+    
+            </nav>
 
-       
-
-            <input type="text" class='search-form' placeholder="¿Qué estas buscando?">
+               
+        </header>
            
-
+    <div class="home-form" > 
         <div class='form'>
 
            
-            <form>
+            <form id='contactForm'>
+
                 <h2 class="titulo-form">Viaja con nosotros</h2>
 
                 <label>Nombre:</label><br>
                 <input type="text" id="nombre"><br>
                 <label>Apellidos:</label><br>
-                <input type="text" id="nombre"><br>
+                <input type="text" id="apellido"><br>
                 <label>Correo:</label><br>
-                <input type="email" id="nombre"><br>
+                <input type="email" id="correo"><br>
                 <label>Telefono:</label><br>
-                <input type="number" id="nombre"><br>
+                <input type="number" id="tel"><br>
                 <label>Mensaje:</label><br>
-                <textarea class="txt-area"  id="nombre"></textarea>
-                <input type="submit" class='submit'>
+                <textarea class="txt-area"  id="mensaje"></textarea><br>
+                <input type="submit" value="submit" class='submit'>
                 
             </form>
 
-        
+                   
 
         </div>
+
+    
+
 
     </div>
 
   
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyBfMUfeK8w-1pz35s1OTw_sI3Z9ppXKo3A",
+            authDomain: "chui-241e9.firebaseapp.com",
+            databaseURL: "https://chui-241e9-default-rtdb.firebaseio.com",
+            projectId: "chui-241e9",
+            storageBucket: "chui-241e9.appspot.com",
+            messagingSenderId: "732965119105",
+            appId: "1:732965119105:web:9743c773c0773cf4335980"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="fb.js"></script>
+        <script src="main.js"></script>  
 </body>
 
 <footer class="nav-foo">
+    <h2>CHUI: Turismo Sostenible</h2>
+    
+    <div class='container-foo'>
+        <a href="form.html"><img  class="img-foo" src="images/fb.png" alt="mensaje"></a>
+        <a href="home.html"><img  class="img-foo" src="images/wp.png" alt="mensaje"></a>
+        <a href="about.html"><img  class="img-foo" src="images/insta.png" alt="mensaje"></a>
 
-
-    <a href="form.html"><img  class="img-foo" src="images/mensaje.png" alt="mensaje"></a>
-    <a href="home.html"><img  class="img-foo" src="images/home.png" alt="mensaje"></a>
-    <a href="about.html"><img  class="img-foo" src="images/chui.png" alt="mensaje"></a>
+    </div>
+    
 </footer>
 </html>

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swiper.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">      
     <title>CHUI</title>
@@ -13,24 +15,60 @@
      
     <div class="home" > 
 
-        
-        <a href="index.html"><img class="logo-home" src="images/logo.png" alt="chui"></a>
+        <header class='header'>
+            <nav class="nav">
+                <a href="index.html"><img class="logo-home" src="images/logo.png" alt="chui"></a>
+                <input type="text" class='search' placeholder="¿Qué estas buscando?">
+                <ul class="nav__ul" id='om' >
+                    <li class="nav__li"><a href="home.html">Inicio</a></li>
+                    <li class="nav__li"><a href="about2.html">Sobre nosotros</a></li>
+                    <li class="nav__li"><a href="form.html">Viajemos</a></li>
+                    <li class="nav__li"><a href="">WhatsApp</a></li>
+                    <li class="nav__li"><a href="">Más</a></li>
+    
+                </ul>
+                <span class='boton-menu' onclick="showmenu()">
+                    <i class= 'fas fa-bars'></i>
+                </span>
+                
+    
+            </nav>
 
-        <div class='about'>
+               
+        </header>
+        <div class='cuadro-opciones'>
             <h2>Turismo en la Ciudad</h2>
 
-          <p>En la ciudad “la jungla de cemento” aún existen lugares mágicos listos para ser explorados. <br><br>
-            A pesar de la contaminación, hay ecosistemas o micro ecosistemas resistiendo a su desaparición. <br><br>
-            En la monotonía de la ciudad, existe un movimiento creciente: La agricultura urbana.<br><br>
-            Varios modelos sostenibles de agricultura en la ciudad te esperan para pasar un fin de semana diferente.<br><br>
-            </p>
+        <ul>
 
-            <a href="tcG.html"><h3 class="boton-galeria">Galeria</h3></a>
+          <li>En la ciudad “la jungla de cemento” aún existen lugares mágicos listos para ser explorados.</li> 
+          <li>A pesar de la contaminación, hay ecosistemas o micro ecosistemas resistiendo a su desaparición.</li> 
+          <li>En la monotonía de la ciudad, existe un movimiento creciente: La agricultura urbana.</li>
+          <li>Varios modelos sostenibles de agricultura en la ciudad te esperan para pasar un fin de semana diferente.</li>
+        </ul>
+
             
-          
-    
 
         </div>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(images/c1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/c2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/c3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/c4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/c5.jpg)"></div>
+     
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
 
 
 
@@ -38,14 +76,26 @@
 
    
 </body>
+<script src="main.js"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="swiper.js"></script>
+
+<!-- Initialize Swiper -->>
+
+
 
  
 
-
 <footer class="nav-foo">
+    <h2>CHUI: Turismo Sostenible</h2>
+    
+    <div class='container-foo'>
+        <a href="form.html"><img  class="img-foo" src="images/fb.png" alt="mensaje"></a>
+        <a href="home.html"><img  class="img-foo" src="images/wp.png" alt="mensaje"></a>
+        <a href="about.html"><img  class="img-foo" src="images/insta.png" alt="mensaje"></a>
 
-    <a href="form.html"><img  class="img-foo" src="images/mensaje.png" alt="mensaje"></a>
-    <a href="home.html"><img  class="img-foo" src="images/home.png" alt="mensaje"></a>
-    <a href="about.html"><img  class="img-foo" src="images/chui.png" alt="mensaje"></a>
+    </div>
+    
 </footer>
 </html>
