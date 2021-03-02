@@ -295,6 +295,7 @@ margin-top: 20px;
     display:flex;
     list-style: none;
     margin-right: 30px;
+    z-index: 2;
 
 }
 
@@ -347,6 +348,10 @@ ul.show {
        
        
     }
+    .boton-menu {
+        
+        display: inline-flex;
+    }
     
  
 }
@@ -389,7 +394,7 @@ ul.show {
 
     .nav__li a {
         font-size: 20px;
-        color: #FFFFFF;
+        color: #ffffff;
         font-weight: 700;
     }
 
