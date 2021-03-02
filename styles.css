@@ -19,6 +19,7 @@ body {
     text-align: center;
     font-family: 'Play', sans-serif;
     background: rgba(85, 94, 214, 0.267);
+    height: 100vh;
 }
 
 .logo {
@@ -31,13 +32,13 @@ body {
 
 .b-ing {
     
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #ffffff;
     padding: 10px;
-    margin-top: 140px;
-    margin-bottom: 63px;
+  
     border-radius: 25px;
 
 
@@ -400,7 +401,7 @@ ul.show {
 
 
     .nav__li a:hover {
-        color: #e9183b
+        color: #18d1e9
     }
     
 
