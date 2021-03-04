@@ -56,7 +56,7 @@ a:link, a:visited{
     align-items: center;
     text-align: center;
     font-family: 'Play', sans-serif;
-    background: rgb(250, 250, 250);
+    background: rgb(255, 255, 255);
 }
 
 
@@ -72,8 +72,8 @@ a:link, a:visited{
 
 .logo-home {
 
-max-width: 72px;
-margin-top: 20px;
+max-width: 110px;
+margin-top: 8px;
 
 }
 
@@ -89,7 +89,7 @@ margin-top: 20px;
 .container{
 
     background-image:url('images/f4.png');
-    opacity: 0.5;
+    opacity: 0.8;
     background-attachment: fixed;
     width: 100vw;
     height: 500px;
@@ -97,9 +97,11 @@ margin-top: 20px;
     padding: 0;
 }
 
+
+
 .cuadro-opciones {
 
-    background-color: rgba(133, 115, 214, 0.226);
+    background-color:#e4f1f1;;
     width: 90vw;
     margin-bottom: 60px;
     margin-top: 20px;
@@ -108,8 +110,9 @@ margin-top: 20px;
     text-align: center;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    color: rgb(0, 0, 0);
 
     
 }
@@ -211,7 +214,8 @@ margin-top: 20px;
     
     display: flex;
     justify-content: space-around;
-    background-color: rgb(109, 129, 240);
+    background: rgb(121,9,103);
+    background: linear-gradient(90deg, rgba(121,9,103,0.23853291316526615) 43%, rgba(0,212,255,0.38139005602240894) 74%);
     height: 100px;
     width: 100vw;
     line-height: 80px;
@@ -234,12 +238,13 @@ margin-top: 20px;
 .form {
 
     margin-top: 30px;
-    background-color: rgba(150, 150, 214, 0.616);
+    background-color:#e4f1f1;
     width: 75vw;
     text-align: center;
     padding: 12px;
     margin-bottom: 56px;
     border-radius: 12px;
+    color: black;
 
     
 }
@@ -265,10 +270,7 @@ margin-top: 20px;
     
 }
 
-.boton-galeria {
-    margin-top: -10px;
-    color: rgb(0, 102, 255);
-}
+
 
 .txt-area {
 
@@ -280,7 +282,9 @@ margin-top: 20px;
 
 
 .nav {
-    background-color: rgb(95, 178, 247);
+
+    background: rgb(121,9,103);
+    background: linear-gradient(90deg, rgba(121,9,103,0.23853291316526615) 43%, rgba(0,212,255,0.38139005602240894) 74%);
     height: 75px;
     width: 100vw;
     display: flex;
@@ -288,6 +292,7 @@ margin-top: 20px;
     align-items: center;
     border-bottom: 1px soli #FFFFFF;
     box-shadow: 5px 0 10px rgb(0, 0, 0, .6);
+  
 
 }
 
@@ -313,7 +318,7 @@ margin-top: 20px;
     text-decoration: none;
     font-size: 18px;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     
 
 }
@@ -335,27 +340,31 @@ ul.show {
     top: 50px;
 }
 
-@media screen and (max-width: 952px) {
 
-    .nav__li a {
-
-        font-size: 16px;
-    }
-    .search {
-
-        border-radius: 10px;
-        height: 20px;
-        width: 40vw;
-       
-       
-    }
-    .boton-menu {
-        
-        display: inline-flex;
-    }
-    
- 
+.bot-bus {
+    border-radius: 10px;
+    background-color: #089E9C;
+    color: white;
 }
+
+
+.resultado {
+    position: absolute;
+    height: 20vh;
+    width: 30vw;
+    background-color: #089e9c77;;
+    z-index: 3;
+    color: white;
+    text-align: left;
+    display: none;
+    border-radius: 20px;
+}
+
+.resultado a {
+    color: #FFFFFF;
+}
+
+
 
 @media screen and (max-width: 858px) {
 
@@ -375,7 +384,7 @@ ul.show {
         position: fixed;
         width: 100vw;
         height: calc(100% - 65px);
-        background-color: #8c8de4bb;
+        background-color:  #089e9cd5;
         top: -100vh;
         text-align: left;
         transition: all .4s;
@@ -426,9 +435,19 @@ ul.show {
         border-radius: 10px;
         height: 20px;
         width: 50vw;
-       
-       
+    
     }
+    .resultado {
+        left: 100px;
+        position: absolute;
+        height: 20vh;
+        width: 50vw;
+        background-color:  #089e9ca2;
+        z-index: 3;
+        color: white;
+        text-align: left;
+    }
+    
 }
 
 
@@ -443,3 +462,5 @@ ul.show {
         height: calc(100%-65px);
     }
 }
+
+
