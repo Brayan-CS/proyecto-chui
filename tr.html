@@ -1,106 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>CHUI</title>
-</head>
-<body>
-     
-    <div class="home" > 
-
-        <header class='header'>
-            <nav class="nav">
-                <a href="index.html"><img class="logo-home" src="images/logo.png" alt="chui"></a>
-                <div class="buscador">
-                    <input type="text" class='search' placeholder="¿Qué estas buscando?">
-                    <button class='bot-bus'>Buscar</button>
-                    <div class="resultado">
-                        <ul class='rb'>
-                            
-                        </ul>
-                    </div>
-                </div>
-                <ul class="nav__ul" id='om' >
-                    <li class="nav__li"><a href="home.html">Inicio</a></li>
-                    <li class="nav__li"><a href="about2.html">Sobre nosotros</a></li>
-                    <li class="nav__li"><a href="form.html">Viajemos</a></li>
-                    <li class="nav__li"><a href="https://api.whatsapp.com/send?phone=+573058199734&text=Hola!%20quiero%20viajar%20" target="__blank">WhatsApp</a></li>
-                    <li class="nav__li"><a href="">Más</a></li>
-    
-                </ul>
-                <span class='boton-menu' onclick="showmenu()">
-                    <i class= 'fas fa-bars'></i>
-                </span>
-                
-    
-            </nav>
-
-               
-        </header>
-
-        <div class='cont'> 
-
-        <div class='cuadro-opciones'>
-            <h2>Turismo Rural</h2>
-
-            <p>El turismo rural parte desde las comunidades del territorio, respetamos y nos comprometemos a que el turismo en las regiones sea una oportunidad de desarrollo y una entrada financiera a las poblaciones locales.<br><br>
-                Se parte desde el reconocimiento del agricultor, del cosechador, de la persona que trabaja el campo desde la admiración y el contacto directo, el compartir y aprender de nuestros campesinos. 
-                </p>
-
-            
-
-        </div>
-          <!-- Swiper -->
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(images/r2.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(images/r1.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(images/r3.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(images/r4.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(images/r6.jpg)"></div>
-         
+  </head>
+  <body>
+    <div class="home">
+      <header class="header">
+        <nav class="nav">
+          <a href="index.html"
+            ><img class="logo-home" src="images/logo.png" alt="chui"
+          /></a>
+          <div class="buscador">
+            <input
+              type="text"
+              class="search"
+              placeholder="¿Qué estas buscando?"
+            />
+            <button class="bot-bus">Buscar</button>
+            <div class="resultado">
+              <ul class="rb"></ul>
             </div>
+          </div>
+          <ul class="nav__ul" id="om">
+            <li class="nav__li"><a href="home.html">Inicio</a></li>
+            <li class="nav__li"><a href="about2.html">Sobre nosotros</a></li>
+            <li class="nav__li"><a href="pro.html">Viajemos</a></li>
+            <li class="nav__li">
+              <a
+                href="https://api.whatsapp.com/send?phone=+573022647732&text=Hola!%20quiero%20viajar%20"
+                target="__blank"
+                >WhatsApp</a
+              >
+            </li>
+            <li class="nav__li"><a href="contact.html">Contacto</a></li>
+          </ul>
+          <span class="boton-menu" onclick="showmenu()">
+            <i class="fas fa-bars"></i>
+          </span>
+        </nav>
+      </header>
 
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+      <div class="cont">
+        <div class="cuadro-opciones">
+          <h2>Turismo Rural</h2>
 
-            <!-- Add Arrows -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+          <p>
+            El turismo rural parte desde las comunidades del territorio,
+            respetamos y nos comprometemos a que el turismo en las regiones sea
+            una oportunidad de desarrollo y una entrada financiera a las
+            poblaciones locales.<br /><br />
+            Se parte desde el reconocimiento del agricultor, del cosechador, de
+            la persona que trabaja el campo desde la admiración y el contacto
+            directo, el compartir y aprender de nuestros campesinos.
+          </p>
         </div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="background-image: url(images/r2.jpg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(images/r1.jpg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(images/r3.jpg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(images/r4.jpg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(images/r6.jpg)"
+            ></div>
+          </div>
 
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
 
-
-
+          <!-- Add Arrows -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </div>
-    </div>
-    
-    <script src="https://kit.fontawesome.com/c0075b8700.js" crossorigin="anonymous"></script>
+
+    <script
+      src="https://kit.fontawesome.com/c0075b8700.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="swiper.js"></script> 
+    <script src="swiper.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 
-
-
- 
-
-<footer class="nav-foo">
+  <footer class="nav-foo">
     <h2>CHUI: Turismo Sostenible</h2>
-    
-    <div class='container-foo'>
-        <a href="form.html"><img  class="img-foo" src="images/fb.png" alt="mensaje"></a>
-        <a href="home.html"><img  class="img-foo" src="images/wp.png" alt="mensaje"></a>
-        <a href="about.html"><img  class="img-foo" src="images/insta.png" alt="mensaje"></a>
 
+    <div class="container-foo">
+      <a href="form.html"
+        ><img class="img-foo" src="images/fb.png" alt="mensaje"
+      /></a>
+      <a href="home.html"
+        ><img class="img-foo" src="images/wp.png" alt="mensaje"
+      /></a>
+      <a href="about.html"
+        ><img class="img-foo" src="images/insta.png" alt="mensaje"
+      /></a>
     </div>
-    
-</footer>
+  </footer>
 </html>

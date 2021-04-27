@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CHUI</title>
+  </head>
+  <body>
+    <div class="home">
+      <header class="header">
+        <nav class="nav">
+          <a href="index.html"
+            ><img class="logo-home" src="images/logo.png" alt="chui"
+          /></a>
+          <div class="buscador">
+            <input
+              type="text"
+              class="search"
+              placeholder="¿Qué estas buscando?"
+            />
+            <button class="bot-bus">Buscar</button>
+            <div class="resultado">
+              <ul class="rb"></ul>
+            </div>
+          </div>
+          <ul class="nav__ul" id="om">
+            <li class="nav__li"><a href="home.html">Inicio</a></li>
+            <li class="nav__li"><a href="about2.html">Sobre nosotros</a></li>
+            <li class="nav__li"><a href="pro.html">Viajemos</a></li>
+            <li class="nav__li">
+              <a
+                href="https://api.whatsapp.com/send?phone=+573022647732&text=Hola!%20quiero%20viajar%20"
+                target="__blank"
+                >WhatsApp</a
+              >
+            </li>
+            <li class="nav__li"><a href="contact.html">Contacto</a></li>
+          </ul>
+          <span class="boton-menu" onclick="showmenu()">
+            <i class="fas fa-bars"></i>
+          </span>
+        </nav>
+      </header>
+
+      <div class="cont">
+        <div class="cuadro-opciones">
+          <h2>Nuestros Planes</h2>
+        </div>
+        <div>
+          <section class="section">
+            <article class="art">
+              <h2>Agricultura Urbana</h2>
+              <img class="imgpro" src="images/pro1.jpg" alt="" />
+              <h3>Precio: 25.000 COP</h3>
+              <button id="bm">Más Información</button>
+              <div id="modal" class="modalcontainer">
+                <div class="modal-cont">
+                  <span class="close">×</span>
+                  <h2>Agricultura Urbana</h2>
+                  <p>
+                    Aprende de la mano de nuestros expertos a usar la tierra en
+                    huertas urbanas, contribuye a la soberanía alimentaria y a
+                    la sustentabilidad.<br /><br />
+                    <b>Incluye:</b> <br />
+                    - Taller virtual <br />- Practica presencial<br />
+                    - Refrigerio<br />
+                    - Guianza<br />
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="art">
+              <h2>Granja ecoturistica</h2>
+              <img class="imgpro" src="images/pro2.jpg" alt="" />
+              <h3>Precio: 100.000 COP</h3>
+              <button id="bm1">Más Información</button>
+              <div id="modal1" class="modalcontainer1">
+                <div class="modal-cont1">
+                  <span class="close1">×</span>
+                  <h2>Granja ecoturistica</h2>
+                  <p>
+                    Escapaté por un día del espacio de la ciudad y vivé una
+                    experiencia cargada naturaleza, aire puro y aprendizaje.<br /><br />
+                    <b>Incluye:</b> <br />
+                    - Transporte <br />
+                    - Refrigerio<br />
+                    - Guianza profesional<br />
+                    - Almuerzo especial<br />
+                    - Avistamiento de Orquídeas<br />
+                    - Póliza de seguros<br />
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="art">
+              <h2>Apicultor por un día</h2>
+              <img class="imgpro" src="images/pro3.jpg" alt="" />
+              <h3>Precio: 60.000 COP</h3>
+              <button id="bm2">Más Información</button>
+              <div id="modal2" class="modalcontainer2">
+                <div class="modal-cont2">
+                  <span class="close2">×</span>
+                  <h2>Apicultor por un día</h2>
+                  <p>
+                    Aprenderas a cosechar miel y viviras una experiencia
+                    inolvidable.<br /><br />
+                    <b>Incluye:</b> <br />
+                    <br />
+                    - Refrigerio<br />
+                    - Guianza profesional<br />
+                    - Degustación de miel<br />
+                    - Traje apicultor (Recorrido)<br />
+                    - Póliza de seguros<br />
+                    - Souvenir (Tarrito 10gr miel)
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="art">
+              <h2>Recorrido humedal</h2>
+              <img class="imgpro" src="images/pro4.jpg" alt="" />
+              <h3>Precio: 15.000 COP</h3>
+              <button id="bm3">Más Información</button>
+              <div id="modal3" class="modalcontainer3">
+                <div class="modal-cont3">
+                  <span class="close3">×</span>
+                  <h2>Recorrido humedal</h2>
+                  <p>
+                    Descubré que dentro de la ciudad puedes encontrar espacios
+                    donde respirar y disfrutar de la naturaleza, aprende sobre
+                    los ecosistemas urbanos y la importancia ecologica de los
+                    mismos<br /><br />
+                    <b>Incluye:</b> <br />
+                    <br />
+                    - Refrigerio<br />
+                    - Guianza profesional<br />
+                    - Recorrido virtual por la localidad<br />
+                    - Recorrido presencial por el humedal<br />
+                  </p>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <a href="form.html"><button class="bpro">Quiero saber más</button></a>
+
+    <script
+      src="https://kit.fontawesome.com/c0075b8700.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="main.js"></script>
+  </body>
+
+  <footer class="nav-foo">
+    <h2>CHUI: Turismo Sostenible</h2>
+
+    <div class="container-foo">
+      <a href="form.html"
+        ><img class="img-foo" src="images/fb.png" alt="mensaje"
+      /></a>
+      <a href="home.html"
+        ><img class="img-foo" src="images/wp.png" alt="mensaje"
+      /></a>
+      <a href="about.html"
+        ><img class="img-foo" src="images/insta.png" alt="mensaje"
+      /></a>
+    </div>
+  </footer>
+</html>
